@@ -2,13 +2,6 @@
   <%= flash[:notice] %>
 </div>
 
-<% if @book.errors.any? %>
-  <%= @book.errors.count %> errors prohibited this book from being saved:
-  <ul>
-    <% @book.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-  </ul>
 
 <h1 class = "show_title_text">Title: <span class = "show_content"><%= @book.title %></span></h1>
     
